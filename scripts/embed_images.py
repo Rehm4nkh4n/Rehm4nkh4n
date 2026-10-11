@@ -1,32 +1,86 @@
-from pathlib import Path
+#!/usr/bin/env python3
+"""Embed the supplied profile portrait into the profile SVG assets.
+
+Expected layout:
+  repository-root/
+    IdMain.jpeg              # supplied portrait (JPEG or PNG is also accepted)
+    right_pointing.png       # optional portrait for connect.svg
+    assets/hero.svg
+    assets/id-dashboard.svg
+    assets/connect.svg       # optional
+    scripts/embed_images.py
+
+Run from any directory with: python scripts/embed_images.py
+The script writes self-contained SVGs (no external image URLs).
+"""
+from __future__ import annotations
+
 import base64
-ROOT=Path(__file__).resolve().parents[1]
-assets=ROOT/'assets'
+import mimetypes
+import re
+from pathlib import Path
 
-def data_uri(path):
-    return 'data:image/png;base64,'+base64.b64encode(path.read_bytes()).decode()
+ROOT = Path(__file__).resolve().parents[1]
+ASSETS = ROOT / "assets"
 
-def replace_all(old,new):
-    for p in assets.glob('*.svg'):
-        s=p.read_text()
-        s=s.replace(old,new)
-        p.write_text(s)
+# Prefer the exact filename supplied by the user, then support common variants.
+PORTRAIT_CANDIDATES = ("IdMain.jpeg", "IdMain.jpg", "id.png", "id.jpg", "id.jpeg")
+CONNECT_CANDIDATES = ("right_pointing.png", "right_pointing.jpg", "right_pointing.jpeg")
 
-# Exact supplied assets are embedded only after you place them here.
-# id.png updates portrait slots; right_pointing.png updates the Connect portrait slot.
-idp=ROOT/'id.png'
-rp=ROOT/'right_pointing.png'
-if not idp.exists() or not rp.exists():
-    missing=[]
-    if not idp.exists(): missing.append('id.png')
-    if not rp.exists(): missing.append('right_pointing.png')
-    raise SystemExit('Missing: '+', '.join(missing))
-uid=data_uri(idp); urp=data_uri(rp)
-for name in ['hero.svg','id-dashboard.svg']:
-    p=assets/name; s=p.read_text(); s=s.replace('data:image/png;base64,PLACEHOLDER_ID',uid)
-# replace existing placeholder data in hero/id with id image, and connect with right image
-placeholder='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII='
-for name in ['hero.svg','id-dashboard.svg']:
-    p=assets/name; p.write_text(p.read_text().replace(placeholder,uid))
-p=assets/'connect.svg'; p.write_text(p.read_text().replace(placeholder,urp))
-print('Embedded id.png into hero.svg + id-dashboard.svg; right_pointing.png into connect.svg')
+
+def find_first_existing(names: tuple[str, ...]) -> Path | None:
+    return next((ROOT / name for name in names if (ROOT / name).is_file()), None)
+
+
+def data_uri(path: Path) -> str:
+    mime, _ = mimetypes.guess_type(path.name)
+    if mime not in {"image/png", "image/jpeg", "image/webp", "image/gif"}:
+        raise ValueError(f"Unsupported image type for {path.name}: {mime or 'unknown'}")
+    encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+    return f"data:{mime};base64,{encoded}"
+
+
+def replace_first_image_href(svg_text: str, uri: str) -> str:
+    """Replace the href of the first SVG image while preserving its geometry."""
+    pattern = re.compile(r'(<image\b[^>]*?\bhref=")[^"]*(")', re.DOTALL)
+    updated, count = pattern.subn(lambda m: m.group(1) + uri + m.group(2), svg_text, count=1)
+    if count == 0:
+        raise ValueError("No <image href=...> element found in SVG")
+    return updated
+
+
+def embed_portrait(path: Path, image: Path) -> None:
+    svg_text = path.read_text(encoding="utf-8")
+    svg_text = replace_first_image_href(svg_text, data_uri(image))
+    path.write_text(svg_text, encoding="utf-8")
+    print(f"Embedded {image.name} -> {path.relative_to(ROOT)}")
+
+
+def main() -> None:
+    if not ASSETS.is_dir():
+        raise SystemExit(f"Assets folder not found: {ASSETS}")
+
+    portrait = find_first_existing(PORTRAIT_CANDIDATES)
+    if portrait is None:
+        expected = ", ".join(PORTRAIT_CANDIDATES)
+        raise SystemExit(f"Portrait image not found in repository root. Expected one of: {expected}")
+
+    for name in ("hero.svg", "id-dashboard.svg"):
+        svg_path = ASSETS / name
+        if not svg_path.is_file():
+            print(f"Skipping missing file: {svg_path.relative_to(ROOT)}")
+            continue
+        embed_portrait(svg_path, portrait)
+
+    connect_svg = ASSETS / "connect.svg"
+    connect_image = find_first_existing(CONNECT_CANDIDATES)
+    if connect_svg.is_file() and connect_image is not None:
+        embed_portrait(connect_svg, connect_image)
+    elif connect_svg.is_file():
+        print("Skipped connect.svg: optional right_pointing image not found.")
+
+    print("Done. SVG images are embedded; no external image URLs are required.")
+
+
+if __name__ == "__main__":
+    main()
