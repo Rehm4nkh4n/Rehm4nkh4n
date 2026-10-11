@@ -94,18 +94,25 @@
 ### 👉 Frameworks
 
 <p align="left">
-  &emsp;&ensp;![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
-  &emsp;&ensp;![Django](https://img.shields.io/badge/Django-%23092E20.svg?style=flat&logo=django&logoColor=white)
-  &emsp;&ensp;![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=flat&logo=flask&logoColor=white)
+  &emsp;
+  <img alt="React" src="https://img.shields.io/badge/React-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB">
+  &emsp;
+  <img alt="Django" src="https://img.shields.io/badge/Django-%23092E20.svg?style=flat&logo=django&logoColor=white">
+  &emsp;
+  <img alt="Flask" src="https://img.shields.io/badge/Flask-%23000.svg?style=flat&logo=flask&logoColor=white">
 </p>
 
 ### 👉 Security & Tools
 
 <p align="left">
-  &emsp;&ensp;![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kalilinux&logoColor=white)
-  &emsp;&ensp;![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark&logoColor=white)
-  &emsp;&ensp;![Nmap](https://img.shields.io/badge/Nmap-0E83CD?style=flat&logoColor=white)
-  &emsp;&ensp;![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+  &emsp;
+  <img alt="Kali Linux" src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kalilinux&logoColor=white">
+  &emsp;
+  <img alt="Wireshark" src="https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark&logoColor=white">
+  &emsp;
+  <img alt="Nmap" src="https://img.shields.io/badge/Nmap-0E83CD?style=flat&logoColor=white">
+  &emsp;
+  <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black">
 </p>
 
 ### 👉 Software & Tools
