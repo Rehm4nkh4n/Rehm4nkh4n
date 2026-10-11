@@ -13,47 +13,56 @@
 </style><defs><pattern id="ip" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#fff" opacity=".04"/></pattern><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6" stop-opacity=".55"/><stop offset="1" stop-color="#f43f5e" stop-opacity=".55"/></linearGradient></defs><rect width="900" height="480" rx="20" fill="#060c1a"/><rect width="900" height="480" rx="20" fill="url(#ip)"/><rect x="1" y="1" width="898" height="478" rx="19" fill="none" stroke="url(#ig)" stroke-width="1.5"/>
 <defs>
   <linearGradient id="foil" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  <clipPath id="cc"><rect x="-146" y="52" width="292" height="370" rx="18"/></clipPath>
+  <clipPath id="cc"><rect x="-130" y="52" width="260" height="380" rx="18"/></clipPath>
 </defs>
-<g class="motion" transform="translate(280 22)">
+<g class="motion" transform="translate(220 18)">
   <animateTransform attributeName="transform" type="rotate" values="-1.2 0 0;1.2 0 0;-1.2 0 0" dur="5s" repeatCount="indefinite"/>
-  <path d="M-34 0 Q0 34 34 0" fill="none" stroke="#c0c8d8" stroke-width="5.5" stroke-linecap="round"/>
-  <rect x="-13" y="7" width="26" height="15" rx="4" fill="#6e7d96"/>
-  <path d="M0 22 L0 52" stroke="#c0c8d8" stroke-width="4.5" stroke-linecap="round"/>
-  <rect x="-146" y="52" width="292" height="370" rx="18" fill="#0a1628" stroke="#2d3f60" stroke-width="1.5"/>
-  <rect x="-146" y="52" width="292" height="5" rx="2.5" fill="#3b82f6"/>
-  <text x="-116" y="90"  class="label b">Software Developer</text>
-  <text x="-116" y="124" class="sub w">Khan Ajizur</text>
-  <text x="-116" y="156" class="sub w">Rehman</text>
-  <rect x="-116" y="166" width="36" height="2" rx="1" fill="#3b82f6"/>
-  <rect x="-116" y="178" width="106" height="120" rx="12" fill="#060c1a" stroke="#1e2d4a" stroke-width="1.5"/>
-  <image x="-112" y="182" width="98" height="112" preserveAspectRatio="xMidYMid slice" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=" clip-path="url(#cc)"/>
-  <text x="4" y="195" class="label m">Location</text>
-  <text x="4" y="215" class="cap w">Mumbai, India</text>
-  <text x="4" y="243" class="label m">Education</text>
-  <text x="4" y="263" class="cap w">BSc-IT · 8.6 CGPA</text>
-  <text x="4" y="291" class="label m">GitHub</text>
-  <text x="4" y="311" class="cap b">rehm4nkh4n</text>
-  <rect x="-116" y="316" width="262" height="1" fill="#1e2d4a"/>
-  <text x="-116" y="338" class="label m">Available For</text>
-  <text x="-116" y="358" class="cap b">Internships · Collaborations</text>
-  <rect x="-116" y="376" width="232" height="26" rx="5" fill="#eef0f6" opacity=".95"/>
-  <g transform="translate(-116 376)"><rect x="4" y="3" width="2" height="18" fill="#060c1a"/><rect x="8" y="3" width="1" height="18" fill="#060c1a"/><rect x="12" y="3" width="1" height="18" fill="#060c1a"/><rect x="16" y="3" width="1" height="18" fill="#060c1a"/><rect x="20" y="3" width="1" height="18" fill="#060c1a"/><rect x="24" y="3" width="2" height="18" fill="#060c1a"/><rect x="28" y="3" width="1" height="18" fill="#060c1a"/><rect x="32" y="3" width="1" height="18" fill="#060c1a"/><rect x="36" y="3" width="1" height="18" fill="#060c1a"/><rect x="40" y="3" width="1" height="18" fill="#060c1a"/><rect x="44" y="3" width="2" height="18" fill="#060c1a"/><rect x="48" y="3" width="1" height="18" fill="#060c1a"/><rect x="52" y="3" width="1" height="18" fill="#060c1a"/><rect x="56" y="3" width="1" height="18" fill="#060c1a"/><rect x="60" y="3" width="1" height="18" fill="#060c1a"/><rect x="64" y="3" width="2" height="18" fill="#060c1a"/><rect x="68" y="3" width="1" height="18" fill="#060c1a"/><rect x="72" y="3" width="1" height="18" fill="#060c1a"/><rect x="76" y="3" width="1" height="18" fill="#060c1a"/><rect x="80" y="3" width="1" height="18" fill="#060c1a"/><rect x="84" y="3" width="2" height="18" fill="#060c1a"/><rect x="88" y="3" width="1" height="18" fill="#060c1a"/><rect x="92" y="3" width="1" height="18" fill="#060c1a"/><rect x="96" y="3" width="1" height="18" fill="#060c1a"/><rect x="100" y="3" width="1" height="18" fill="#060c1a"/><rect x="104" y="3" width="2" height="18" fill="#060c1a"/><rect x="108" y="3" width="1" height="18" fill="#060c1a"/><rect x="112" y="3" width="1" height="18" fill="#060c1a"/><rect x="116" y="3" width="1" height="18" fill="#060c1a"/><rect x="120" y="3" width="1" height="18" fill="#060c1a"/><rect x="124" y="3" width="2" height="18" fill="#060c1a"/><rect x="128" y="3" width="1" height="18" fill="#060c1a"/><rect x="132" y="3" width="1" height="18" fill="#060c1a"/><rect x="136" y="3" width="1" height="18" fill="#060c1a"/><rect x="140" y="3" width="1" height="18" fill="#060c1a"/><rect x="144" y="3" width="2" height="18" fill="#060c1a"/><rect x="148" y="3" width="1" height="18" fill="#060c1a"/><rect x="152" y="3" width="1" height="18" fill="#060c1a"/><rect x="156" y="3" width="1" height="18" fill="#060c1a"/><rect x="160" y="3" width="1" height="18" fill="#060c1a"/><rect x="164" y="3" width="2" height="18" fill="#060c1a"/><rect x="168" y="3" width="1" height="18" fill="#060c1a"/><rect x="172" y="3" width="1" height="18" fill="#060c1a"/><rect x="176" y="3" width="1" height="18" fill="#060c1a"/><rect x="180" y="3" width="1" height="18" fill="#060c1a"/><rect x="184" y="3" width="2" height="18" fill="#060c1a"/><rect x="188" y="3" width="1" height="18" fill="#060c1a"/><rect x="192" y="3" width="1" height="18" fill="#060c1a"/><rect x="196" y="3" width="1" height="18" fill="#060c1a"/><rect x="200" y="3" width="1" height="18" fill="#060c1a"/><rect x="204" y="3" width="2" height="18" fill="#060c1a"/><rect x="208" y="3" width="1" height="18" fill="#060c1a"/><rect x="212" y="3" width="1" height="18" fill="#060c1a"/><rect x="216" y="3" width="1" height="18" fill="#060c1a"/><rect x="220" y="3" width="1" height="18" fill="#060c1a"/><rect x="224" y="3" width="2" height="18" fill="#060c1a"/></g>
-  <rect x="-146" y="52" width="292" height="370" rx="18" fill="url(#foil)" opacity=".07" clip-path="url(#cc)"><animate attributeName="x" values="-360;160;-360" dur="6s" repeatCount="indefinite"/></rect>
+  <path d="M-30 0 Q0 30 30 0" fill="none" stroke="#c0c8d8" stroke-width="5" stroke-linecap="round"/>
+  <rect x="-12" y="7" width="24" height="14" rx="4" fill="#6e7d96"/>
+  <path d="M0 21 L0 52" stroke="#c0c8d8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="-130" y="52" width="260" height="380" rx="18" fill="#0a1628" stroke="#2d3f60" stroke-width="1.5"/>
+  <rect x="-130" y="52" width="260" height="5" rx="2.5" fill="#3b82f6"/>
+  <text x="-102" y="88"  class="label b">Software Developer</text>
+  <text x="-102" y="120" class="sub w">Khan Ajizur</text>
+  <text x="-102" y="150" class="sub w">Rehman</text>
+  <rect x="-102" y="160" width="36" height="2" rx="1" fill="#3b82f6"/>
+  <rect x="-102" y="172" width="100" height="116" rx="12" fill="#060c1a" stroke="#1e2d4a" stroke-width="1.5"/>
+  <image x="-98" y="176" width="92" height="108" preserveAspectRatio="xMidYMid slice" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=" clip-path="url(#cc)"/>
+  <text x="10" y="188" class="label m">Location</text>
+  <text x="10" y="208" class="cap w">Mumbai, India</text>
+  <text x="10" y="234" class="label m">Education</text>
+  <text x="10" y="254" class="cap w">BSc-IT · 8.6 CGPA</text>
+  <text x="10" y="280" class="label m">GitHub</text>
+  <text x="10" y="300" class="cap b">rehm4nkh4n</text>
+  <text x="10" y="326" class="label m">Status</text>
+  <text x="10" y="346" class="cap" fill="#4ade80">Open to Work</text>
+  <rect x="-102" y="360" width="232" height="1" fill="#1e2d4a"/>
+  <text x="-102" y="382" class="label m">Internships · Collaborations</text>
+  <rect x="-102" y="396" width="232" height="24" rx="5" fill="#eef0f6" opacity=".95"/>
+  <g transform="translate(-102 396)"><rect x="4" y="3" width="2" height="18" fill="#060c1a"/><rect x="8" y="3" width="1" height="18" fill="#060c1a"/><rect x="12" y="3" width="1" height="18" fill="#060c1a"/><rect x="16" y="3" width="1" height="18" fill="#060c1a"/><rect x="20" y="3" width="1" height="18" fill="#060c1a"/><rect x="24" y="3" width="2" height="18" fill="#060c1a"/><rect x="28" y="3" width="1" height="18" fill="#060c1a"/><rect x="32" y="3" width="1" height="18" fill="#060c1a"/><rect x="36" y="3" width="1" height="18" fill="#060c1a"/><rect x="40" y="3" width="1" height="18" fill="#060c1a"/><rect x="44" y="3" width="2" height="18" fill="#060c1a"/><rect x="48" y="3" width="1" height="18" fill="#060c1a"/><rect x="52" y="3" width="1" height="18" fill="#060c1a"/><rect x="56" y="3" width="1" height="18" fill="#060c1a"/><rect x="60" y="3" width="1" height="18" fill="#060c1a"/><rect x="64" y="3" width="2" height="18" fill="#060c1a"/><rect x="68" y="3" width="1" height="18" fill="#060c1a"/><rect x="72" y="3" width="1" height="18" fill="#060c1a"/><rect x="76" y="3" width="1" height="18" fill="#060c1a"/><rect x="80" y="3" width="1" height="18" fill="#060c1a"/><rect x="84" y="3" width="2" height="18" fill="#060c1a"/><rect x="88" y="3" width="1" height="18" fill="#060c1a"/><rect x="92" y="3" width="1" height="18" fill="#060c1a"/><rect x="96" y="3" width="1" height="18" fill="#060c1a"/><rect x="100" y="3" width="1" height="18" fill="#060c1a"/><rect x="104" y="3" width="2" height="18" fill="#060c1a"/><rect x="108" y="3" width="1" height="18" fill="#060c1a"/><rect x="112" y="3" width="1" height="18" fill="#060c1a"/><rect x="116" y="3" width="1" height="18" fill="#060c1a"/><rect x="120" y="3" width="1" height="18" fill="#060c1a"/><rect x="124" y="3" width="2" height="18" fill="#060c1a"/><rect x="128" y="3" width="1" height="18" fill="#060c1a"/><rect x="132" y="3" width="1" height="18" fill="#060c1a"/><rect x="136" y="3" width="1" height="18" fill="#060c1a"/><rect x="140" y="3" width="1" height="18" fill="#060c1a"/><rect x="144" y="3" width="2" height="18" fill="#060c1a"/><rect x="148" y="3" width="1" height="18" fill="#060c1a"/><rect x="152" y="3" width="1" height="18" fill="#060c1a"/><rect x="156" y="3" width="1" height="18" fill="#060c1a"/><rect x="160" y="3" width="1" height="18" fill="#060c1a"/><rect x="164" y="3" width="2" height="18" fill="#060c1a"/><rect x="168" y="3" width="1" height="18" fill="#060c1a"/><rect x="172" y="3" width="1" height="18" fill="#060c1a"/><rect x="176" y="3" width="1" height="18" fill="#060c1a"/><rect x="180" y="3" width="1" height="18" fill="#060c1a"/><rect x="184" y="3" width="2" height="18" fill="#060c1a"/><rect x="188" y="3" width="1" height="18" fill="#060c1a"/><rect x="192" y="3" width="1" height="18" fill="#060c1a"/><rect x="196" y="3" width="1" height="18" fill="#060c1a"/><rect x="200" y="3" width="1" height="18" fill="#060c1a"/><rect x="204" y="3" width="2" height="18" fill="#060c1a"/><rect x="208" y="3" width="1" height="18" fill="#060c1a"/><rect x="212" y="3" width="1" height="18" fill="#060c1a"/><rect x="216" y="3" width="1" height="18" fill="#060c1a"/><rect x="220" y="3" width="1" height="18" fill="#060c1a"/><rect x="224" y="3" width="2" height="18" fill="#060c1a"/></g>
+  <rect x="-130" y="52" width="260" height="380" rx="18" fill="url(#foil)" opacity=".07" clip-path="url(#cc)"><animate attributeName="x" values="-360;160;-360" dur="6s" repeatCount="indefinite"/></rect>
 </g>
-<g transform="translate(580 72)">
-  <text y="0" class="label m">Quick Stats</text>
-  <rect y="16"  width="268" height="72" rx="14" fill="#0a1628" stroke="#1e2d4a" stroke-width="1.5"/>
-  <text x="20"  y="46" class="label m">Degree</text>
-  <text x="20"  y="68" class="cap w">BSc-IT — 8.6 CGPA</text>
-  <rect y="100" width="268" height="72" rx="14" fill="#0a1628" stroke="#1e2d4a" stroke-width="1.5"/>
-  <text x="20"  y="130" class="label m">Location</text>
-  <text x="20"  y="152" class="cap w">Mumbai, Maharashtra</text>
-  <rect y="184" width="268" height="72" rx="14" fill="#0a1628" stroke="#1e2d4a" stroke-width="1.5"/>
-  <text x="20"  y="214" class="label m">Focus</text>
-  <text x="20"  y="236" class="cap w">Full-Stack · Security · Data</text>
-  <rect y="268" width="268" height="72" rx="14" fill="#0a1628" stroke="#1e2d4a" stroke-width="1.5"/>
-  <text x="20"  y="298" class="label m">Available For</text>
-  <text x="20"  y="320" class="cap b">Internships · Collaborations</text>
+<g transform="translate(490 68)">
+  <text y="0" class="label m">About me</text>
+  <rect y="18" width="358" height="1" fill="#1e2d4a"/>
+  <text x="0" y="50" class="sub w">Full-Stack</text>
+  <text x="0" y="84" class="sub w">Developer.</text>
+  <rect y="100" width="32" height="2" rx="1" fill="#3b82f6"/>
+  <text x="0" y="132" class="body m">Building secure, scalable web</text>
+  <text x="0" y="156" class="body m">applications with React and Python.</text>
+  <text x="0" y="180" class="body m">Security-minded, data-curious,</text>
+  <text x="0" y="204" class="body m">always learning.</text>
+  <rect y="230" width="358" height="1" fill="#1e2d4a"/>
+  <text x="0" y="258" class="label m">Focus areas</text>
+  <rect y="272" width="96" height="26" rx="13" fill="#0a1628" stroke="#1e2d4a" stroke-width="1"/>
+  <text x="48" y="290" text-anchor="middle" class="sm m">Full-Stack</text>
+  <rect x="106" y="272" width="88" height="26" rx="13" fill="#0a1628" stroke="#1e2d4a" stroke-width="1"/>
+  <text x="150" y="290" text-anchor="middle" class="sm m">Security</text>
+  <rect x="204" y="272" width="64" height="26" rx="13" fill="#0a1628" stroke="#1e2d4a" stroke-width="1"/>
+  <text x="236" y="290" text-anchor="middle" class="sm m">Data</text>
+  <text x="0" y="336" class="label m">Education</text>
+  <text x="0" y="358" class="cap w">BSc-IT · 8.6 CGPA</text>
+  <text x="200" y="336" class="label m">Location</text>
+  <text x="200" y="358" class="cap w">Mumbai, India</text>
 </g>
 </svg>
