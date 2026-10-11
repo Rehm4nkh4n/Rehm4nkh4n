@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/id-dashboard.svg?v=2" alt="Developer ID" width="900" />
+  <img src="./assets/id-dashboard.svg?v=3" alt="Developer ID" width="900" />
 </p>
 
 ---
