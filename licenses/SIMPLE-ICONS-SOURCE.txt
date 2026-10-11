@@ -1,0 +1,6 @@
+Simple Icons source reference:
+https://github.com/simple-icons/simple-icons
+License: CC0-1.0 for the Simple Icons library. The package asks users to read its legal disclaimer.
+
+This build uses compact platform monograms in the SVGs rather than shipping third-party brand paths,
+so the SVGs remain self-contained and avoid misrepresenting an official logo.
